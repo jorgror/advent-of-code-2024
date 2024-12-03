@@ -1,4 +1,4 @@
-package distance
+package lib01
 
 func countOccurances(list []int) map[int]int {
 	occurances := make(map[int]int)

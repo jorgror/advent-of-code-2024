@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/jorgror/advent-of-code-2024/01/distance"
+	"github.com/jorgror/advent-of-code-2024/01/lib01"
 )
 
 func main() {
@@ -16,17 +16,17 @@ func main() {
 	}
 	defer file.Close()
 
-	left, right, err := distance.Parse(file)
+	left, right, err := lib01.Parse(file)
 
 	if err != nil {
 		panic(err)
 	}
 
-	distanceRes := distance.CalculateDistance(left, right)
+	distanceRes := lib01.CalculateDistance(left, right)
 
 	fmt.Println("Distance", distanceRes)
 
-	similarity := distance.CalcSimilarity(left, right)
+	similarity := lib01.CalcSimilarity(left, right)
 
 	fmt.Println("Similarity", similarity)
 }
