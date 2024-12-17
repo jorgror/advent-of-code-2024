@@ -5,11 +5,11 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "05",
+      "name": "06",
       "type": "go",
       "request": "launch",
       "mode": "auto",
-      "program": "${workspaceFolder}/05/main/main.go"
+      "program": "${workspaceFolder}/06/main/main.go"
     }
   ]
 }
